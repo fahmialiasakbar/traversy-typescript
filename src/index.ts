@@ -44,7 +44,6 @@ enum Direction2 {
 console.log(Direction2)
 
 // Object
-
 type User = {
     id: number,
     name: string
@@ -71,3 +70,23 @@ function log(message: number | string): void {
 }
 log("Horn")
 log(6)
+
+// Interfaces
+interface UserInterface {
+    readonly id: number
+    name: string
+    age?: number
+} 
+
+const user1: UserInterface = {
+    id: 1,
+    name: 'Dimitrov'
+}
+
+// Function Interface
+interface MathFunc {
+    (x: number, y: number): number
+}
+
+const add: MathFunc = (x:number, y:number): number => x + y
+const sub: MathFunc = (x:number, y:number): number => x - y

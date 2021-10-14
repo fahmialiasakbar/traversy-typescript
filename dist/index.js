@@ -53,3 +53,9 @@ function log(message) {
 }
 log("Horn");
 log(6);
+const user1 = {
+    id: 1,
+    name: 'Dimitrov'
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
