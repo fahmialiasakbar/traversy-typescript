@@ -54,3 +54,20 @@ const user: User = {
     id: 1,
     name: 'Dimitrov'
 }
+
+// Type Assertion
+let cid: any = 'ano'
+// let customerId = <number>cid
+let customerId = cid as number
+
+// Functions
+function addNum(x: number, y: number): number {
+    return x + y
+}
+console.log(addNum(1, 3))
+
+function log(message: number | string): void {
+    console.log(message)
+}
+log("Horn")
+log(6)
