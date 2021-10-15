@@ -26,7 +26,7 @@ var Direction1;
     Direction1[Direction1["Left"] = 2] = "Left";
     Direction1[Direction1["Right"] = 3] = "Right";
 })(Direction1 || (Direction1 = {}));
-console.log(Direction1);
+// console.log(Direction1)
 var Direction2;
 (function (Direction2) {
     Direction2["Up"] = "Up";
@@ -34,7 +34,6 @@ var Direction2;
     Direction2["Left"] = "Left";
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
-console.log(Direction2);
 const user = {
     id: 1,
     name: 'Dimitrov'
@@ -47,9 +46,9 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
-console.log(addNum(1, 3));
+// console.log(addNum(1, 3))
 function log(message) {
-    console.log(message);
+    // console.log(message)
 }
 log("Horn");
 log(6);
@@ -71,7 +70,6 @@ class Person {
 }
 const jack = new Person(1, 'Jack Sparrow');
 const pat = new Person(2, 'Pat Mahomes');
-console.log(jack.register());
 class Student {
     constructor(id, name) {
         this.id = id;
@@ -82,7 +80,7 @@ class Student {
     }
 }
 const jane = new Student(1, "Jane Dinata");
-console.log(jane.register());
+// console.log(jane.register())
 // Extending Classes (Subclasses)
 class Assistant extends Student {
     constructor(id, name, position) {
@@ -91,4 +89,4 @@ class Assistant extends Student {
     }
 }
 const mick = new Assistant(3, "Mike Doohan", "laboran");
-console.log(mick.register());
+// console.log(mick.register())

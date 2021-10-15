@@ -32,7 +32,7 @@ enum Direction1 {
     Right
 }
 
-console.log(Direction1)
+// console.log(Direction1)
 
 enum Direction2 {
     Up = 'Up',
@@ -41,7 +41,7 @@ enum Direction2 {
     Right = 'Right'
 }
 
-console.log(Direction2)
+// console.log(Direction2)
 
 // Object
 type User = {
@@ -63,10 +63,10 @@ let customerId = cid as number
 function addNum(x: number, y: number): number {
     return x + y
 }
-console.log(addNum(1, 3))
+// console.log(addNum(1, 3))
 
 function log(message: number | string): void {
-    console.log(message)
+    // console.log(message)
 }
 log("Horn")
 log(6)
@@ -109,7 +109,7 @@ class Person {
 const jack = new Person(1, 'Jack Sparrow')
 const pat = new Person(2, 'Pat Mahomes')
 
-console.log(jack.register())
+// console.log(jack.register())
 
 // Implementation Interfaces in class
 interface StudentInterface {
@@ -133,7 +133,7 @@ class Student implements StudentInterface {
 }
 
 const jane = new Student(1, "Jane Dinata")
-console.log(jane.register())
+// console.log(jane.register())
 
 // Extending Classes (Subclasses)
 class Assistant extends Student {
@@ -146,4 +146,4 @@ class Assistant extends Student {
 }
 
 const mick = new Assistant(3, "Mike Doohan", "laboran")
-console.log(mick.register())
+// console.log(mick.register())
