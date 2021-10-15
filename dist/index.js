@@ -90,3 +90,11 @@ class Assistant extends Student {
 }
 const mick = new Assistant(3, "Mike Doohan", "laboran");
 // console.log(mick.register())
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['Dani', 'Mir', 'Pedro', 'Lorris']);
+numArray.push(6);
+strArray.push('Charles');
