@@ -110,3 +110,27 @@ const jack = new Person(1, 'Jack Sparrow')
 const pat = new Person(2, 'Pat Mahomes')
 
 console.log(jack.register())
+
+// Implementation Interfaces in class
+interface StudentInterface {
+    id: number
+    name: string
+    register(): string
+} 
+ 
+class Student implements StudentInterface {
+    id: number
+    name: string
+    
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+
+    register() {
+        return `Register on ${this.name} success`
+    }
+}
+
+const jane = new Student(1, "Jane Dinata")
+console.log(jane.register())

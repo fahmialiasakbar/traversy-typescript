@@ -72,3 +72,14 @@ class Person {
 const jack = new Person(1, 'Jack Sparrow');
 const pat = new Person(2, 'Pat Mahomes');
 console.log(jack.register());
+class Student {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `Register on ${this.name} success`;
+    }
+}
+const jane = new Student(1, "Jane Dinata");
+console.log(jane.register());
