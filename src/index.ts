@@ -134,3 +134,16 @@ class Student implements StudentInterface {
 
 const jane = new Student(1, "Jane Dinata")
 console.log(jane.register())
+
+// Extending Classes (Subclasses)
+class Assistant extends Student {
+    position: string
+
+    constructor(id: number, name: string, position: string) {
+        super(id, name)
+        this.position = position
+    }
+}
+
+const mick = new Assistant(3, "Mike Doohan", "laboran")
+console.log(mick.register())

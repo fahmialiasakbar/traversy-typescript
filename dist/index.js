@@ -83,3 +83,12 @@ class Student {
 }
 const jane = new Student(1, "Jane Dinata");
 console.log(jane.register());
+// Extending Classes (Subclasses)
+class Assistant extends Student {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const mick = new Assistant(3, "Mike Doohan", "laboran");
+console.log(mick.register());
